@@ -413,7 +413,7 @@ class Wp_Pivotal_Tracker_Admin {
 			$redirect = $this->plugin_name;
 		}
 
-		do_action( 'admin_notices' );
+		// do_action( 'admin_notices' );
 		wp_redirect( admin_url( 'admin.php?page=' . $redirect ) );
 		exit();
 

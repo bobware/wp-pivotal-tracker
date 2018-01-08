@@ -173,12 +173,6 @@ class Wp_Pivotal_Tracker_Api {
 
 		$this->response = wp_remote_post( $url, $args );
 
-		pr( array(
-			'url' => $url,
-			'args' => $args,
-			'response' => $this->response
-		));
-
 		return $this->response;
 
 	}
